@@ -1,6 +1,6 @@
 import React from 'react';
 
-function List()
+ function List()
 {
     const Ipl = ["Mi", "Csk", "Rcb"];
 

@@ -8,6 +8,12 @@ import EventHandlers from './Components/EventHandlers';
 import Form from './Components/Form';
 import Path from "./Components/Path";
 import Styling from './Components/Styling';
+import Header from './Components/Project/Header';
+import MainContent from './Components/Project/MainContent';
+import Footer from './Components/Project/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './Components/Project/Homepage';
+import AboutPage from './Components/Project/Aboutpage';
 
 function App() {
   return (
@@ -32,9 +38,16 @@ function App() {
       {/* <Conditional2/> */}
       {/* <List/> */}
       {/* <EventHandlers/> */}
-      <Form/>
+      {/* <Form/> */}
       {/* <Path/> */}
       {/* <Styling/> */}
+      <Header/>
+      {/* <MainContent/> */}
+      <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      <Footer/>
     </div>
   );
 }
